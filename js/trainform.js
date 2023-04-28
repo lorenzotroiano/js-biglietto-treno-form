@@ -7,10 +7,12 @@ let userName, userKm, userAge, prezzoKm, percentualeSconto;
 
 // Chiedere nome e cognome all'user
 
-  function myFunction() {
+    function myFunction() {
     
     // Chiedere nome e cognome all'user
     userName = document.getElementById("username").value;
+
+    console.log(userName);
     
     // chiedere km che vuole percorrere
     userKm = document.getElementById("km").value;
@@ -52,9 +54,7 @@ prezzoBase = prezzoKm * userKm;
 console.log(prezzoBase);
 
 
-// minorenne = document.getElementById("minorenne").value;
-// anziano = document.getElementById("anziano").value;
-// adulto = document.getElementById("adulto").value;
+
 
 
 
