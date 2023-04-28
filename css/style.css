@@ -6,7 +6,7 @@
 
 #container {
     /* height: 100%; */
-    padding: 20px;
+    padding: 25px;
     height: 100vh;
     background: linear-gradient(to right, #ad5389, #3c1053);
 }
@@ -61,6 +61,8 @@ button {
    border-radius: 10px;
    text-align: center;
    font-size: 20px;
+
+   color: white;
 
 }
 
