@@ -57,22 +57,12 @@ prezzoFinale = prezzoBase - prezzoSconto;
 
 document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:" + " " + prezzoFinale.toFixed(2);
 
+
+
   }
  
 
 
-
-// calcolare prezzo biglietto scontato
-// prezzoSconto = userKm * percentualeSconto / 100;
-// prezzoFinale = prezzoBase - prezzoSconto;
-
-// console.log(prezzoSconto, prezzoFinale);
-
-
-
-
-
-// document.getElementById("stampaprezzofinale").innerHTML = prezzoFinale;
 
 
 

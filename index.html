@@ -9,44 +9,49 @@
 </head>
 <body>
     
-
-    <div>
+<div id="container">
+    
+    <div class="biglietto">
         <!-- <form action="" method="get" class=""> -->
-            <div class="">
-                <label for="">Nome e Cognome:</label>
-                <input id="username" type="text" name="username" required>
-            </div>
-            <div class="">
-                <label for="">Km che vuoi percorrere: </label>
-                <input id="km" type="number" name="km" required>
-            </div>
-           
-            <div class="">
-                <label for="">Età: </label>
-                <input id="age" type="number" name="age" required>
+            <div class="end">
+                <div>
+                    <label for="">Nome e Cognome:</label>
+                    <input id="username" type="text" name="username" required>
+                </div>
+                <div>
+                    <label for="">Km che vuoi percorrere: </label>
+                    <input id="km" type="number" name="km" required>
+                </div>
+            
+                <div>
+                    <label for="">Età: </label>
+                    <input id="age" type="number" name="age" required>
+                </div>
             </div>
 
-            <div class="">
-                <button id="myBtn" onclick="myFunction()">genera biglietto</button>
+            <div class="center">
+                <button id="myBtn" onclick="myFunction()">Genera biglietto</button>
             </div>
-            <div class="">
+            <!-- <div class=""> -->
                 <!-- <input type="submit" value="Annulla"> -->
-            </div>
+            <!-- </div> -->
         <!-- </form> -->
     </div>
 
 
 
 
-    <h1 id="stampanome"></h1>
-    <h2 id="stampakm"></h2>
-    <h3 id="stampaeta"></h3>
-    <h4 id="prezzobase"></h4>
-    <h4 id="stampaprezzosconto"></h4>
-    <h4 id="stampaprezzofinale"></h4>
+    <div class="biglietto2">
+        <span id="stampanome"></span>
+        <span id="stampakm"></span>
+        <span id="stampaeta"></span>
+        <span id="prezzobase"></span>
+        <span id="stampaprezzosconto"></span>
+        <span id="stampaprezzofinale"></span>
+    </div>
 
 
-
+</div>
 
 
 
