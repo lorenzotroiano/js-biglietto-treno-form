@@ -1,29 +1,40 @@
 // regole generali
-let userName, userKm, userAge, prezzoKm, percentualeSconto;
+let userName, userKm, userAge, prezzoKm, prezzoBase, percentualeSconto;
 
 
 
-
+// const element = document.getElementById("myBtn");
+// element.addEventListener("click", myFunction);
 
 // Chiedere nome e cognome all'user
-
-    function myFunction() {
+function myFunction() {
     
     // Chiedere nome e cognome all'user
     userName = document.getElementById("username").value;
+    
 
-    console.log(userName);
+    document.getElementById("stampanome").innerHTML = userName;
+   
     
     // chiedere km che vuole percorrere
     userKm = document.getElementById("km").value;
+
+    document.getElementById("stampakm").innerHTML = userKm;
    
     // chiedere età
     userAge = document.getElementById("age").value;
 
+    document.getElementById("stampaeta").innerHTML = userAge;
+
 
 
     
-    submitOK = "true";
+    // prezzo km 0,21cent
+    prezzoKm = 0,21;
+
+    prezzoBase = prezzoKm * userKm;
+
+    document.getElementById("prezzobase").innerHTML = prezzoBase;
   
 
     if (userAge <= 17) {
@@ -36,40 +47,29 @@ let userName, userKm, userAge, prezzoKm, percentualeSconto;
         percentualeSconto = 0;
     }
   
-   
-  
-    if (submitOK == "false") {
-      return false;
-    }
+
+// calcolare prezzo biglietto scontato
+prezzoSconto = prezzoBase * percentualeSconto / 100;
+prezzoFinale = prezzoBase - prezzoSconto;
+
+document.getElementById("stampaprezzofinale").innerHTML = prezzoFinale;
+
   }
-
-
-
  
-
-// prezzo km 0,21cent
-prezzoKm = parseInt(0,21);
-
-prezzoBase = prezzoKm * userKm;
-console.log(prezzoBase);
-
-
-
-
 
 
 
 // calcolare prezzo biglietto scontato
-prezzoSconto = userKm * percentualeSconto / 100;
-prezzoFinale = prezzoBase - prezzoSconto;
+// prezzoSconto = userKm * percentualeSconto / 100;
+// prezzoFinale = prezzoBase - prezzoSconto;
 
-console.log(prezzoSconto, prezzoFinale);
-
-
+// console.log(prezzoSconto, prezzoFinale);
 
 
 
-document.getElementById("stampanome").innerHTML = userName;
+
+
+// document.getElementById("stampaprezzofinale").innerHTML = prezzoFinale;
 
 
 
