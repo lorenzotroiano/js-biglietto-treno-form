@@ -11,27 +11,23 @@
     
 
     <div>
-        <form action="" method="get" class="">
+        <form action="" method="get" class="" onsubmit="return myFunction()">
             <div class="">
-                <label for="name">Nome e Cognome: </label>
-                <input type="text" name="name" id="name" required placeholder="Inserisci Nome e Cognome">
+                <label for="">Nome e Cognome: </label>
+                <input id="username" type="text" name="username" required>
             </div>
             <div class="">
                 <label for="">Km che vuoi percorrere: </label>
-                <input type="number" name="" id="" required placeholder="Inserisci Km">
+                <input id="km" type="number" name="km" required>
             </div>
-            <div>
-                <label for="fascia-età">Fascia di età:</label>
-
-                <select id="fascia-età" required>
-                    <option value="">--Inserisci fascia di età--</option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="adulto">Adulto</option>
-                    <option value="anziano">Anziano</option>
-                </select>
-            </div>
+           
             <div class="">
-                <input type="submit" value="Genera">
+                <label for="">Età: </label>
+                <input id="age" type="number" name="age" required>
+            </div>
+
+            <div class="">
+                <input onClick="myFunction()" type="submit" value="Genera">
             </div>
             <div class="">
                 <input type="submit" value="Annulla">
@@ -41,6 +37,11 @@
 
 
 
+
+    <h1 id="stampanome">ciao</h1>
+    <h2 id="stampakm"></h2>
+    <h3 id="stampasesso"></h3>
+    <h4 id="stampaprezzofinale"></h4>
 
 
 
