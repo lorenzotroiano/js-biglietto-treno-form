@@ -13,28 +13,30 @@ function myFunction() {
     userName = document.getElementById("username").value;
     
 
-    document.getElementById("stampanome").innerHTML = userName;
+    document.getElementById("stampanome").innerHTML = "Nome:" + " " + userName;
    
     
     // chiedere km che vuole percorrere
     userKm = document.getElementById("km").value;
 
-    document.getElementById("stampakm").innerHTML = userKm;
+    document.getElementById("stampakm").innerHTML = "Km richiesti:" + " " + userKm;
    
     // chiedere età
     userAge = document.getElementById("age").value;
 
-    document.getElementById("stampaeta").innerHTML = userAge;
+    document.getElementById("stampaeta").innerHTML = "Età Cliente:" + " " + userAge;
 
 
 
     
     // prezzo km 0,21cent
-    prezzoKm = 0,21;
+    prezzoKm = 0.21;
 
     prezzoBase = prezzoKm * userKm;
 
-    document.getElementById("prezzobase").innerHTML = prezzoBase;
+    console.log(prezzoBase);
+
+    document.getElementById("prezzobase").innerHTML = "Il prezzo base da pagare sarebbe di circa:" + " " + prezzoBase.toFixed(2);
   
 
     if (userAge <= 17) {
@@ -50,9 +52,10 @@ function myFunction() {
 
 // calcolare prezzo biglietto scontato
 prezzoSconto = prezzoBase * percentualeSconto / 100;
+document.getElementById("stampaprezzosconto").innerHTML = "Lo sconto da scalare è pari a:" + " " + prezzoSconto.toFixed(2);
 prezzoFinale = prezzoBase - prezzoSconto;
 
-document.getElementById("stampaprezzofinale").innerHTML = prezzoFinale;
+document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:" + " " + prezzoFinale.toFixed(2);
 
   }
  
