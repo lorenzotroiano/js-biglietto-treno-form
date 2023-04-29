@@ -14,7 +14,7 @@
     <div class="biglietto">
 
             <h1>Acquista il tuo biglietto!</h1>
-        <!-- <form action="" method="get" class=""> -->
+        <!-- <form id="reset" action="" method="get" class=""> -->
             <div class="end">
                 <div>
                     <label for="">Nome:</label>
@@ -25,31 +25,38 @@
                     <input id="km" type="number" name="km" placeholder="Inserisci Km" required>
                 </div>
             
-                <div>
+                <!-- <div>
                     <label for="">Età: </label>
                     <input id="age" type="number" name="age" placeholder="Inserisci Età" required>
-                </div>
+                </div> -->
+
+                <select id="age" required>
+                    <option value="error">--Seleziona fascia di Età--</option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="anziano">Anziano</option>
+                </select>
             </div>
 
             <div class="center">
                 <button id="myBtn" onclick="myFunction()">Genera biglietto</button>
             </div>
-            <!-- <div class=""> -->
-                <!-- <input type="submit" value="Annulla"> -->
-            <!-- </div> -->
+            <div class="center">
+                <button onclick="myReset()">Genera nuovo biglietto</button>
+            </div>
         <!-- </form> -->
     </div>
 
 
 
 
-    <div class="biglietto2">
-        <span id="stampanome"></span>
-        <span id="stampakm"></span>
-        <span id="stampaeta"></span>
-        <span id="prezzobase"></span>
-        <span id="stampaprezzosconto"></span>
-        <span id="stampaprezzofinale"></span>
+    <div id="biglietto2" class="biglietto2-none">
+        <h4 id="stampanome"></h4>
+        <h4 id="stampakm"></h4>
+        <h4 id="stampaeta"></h4>
+        <h4 id="prezzobase"></h4>
+        <h4 id="stampaprezzosconto"></h4>
+        <h4 id="stampaprezzofinale"></h4>
     </div>
 
 

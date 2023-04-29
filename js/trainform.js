@@ -24,7 +24,7 @@ function myFunction() {
     // chiedere età
     userAge = document.getElementById("age").value;
 
-    document.getElementById("stampaeta").innerHTML = "Età Cliente:" + " " + userAge;
+    document.getElementById("stampaeta").innerHTML = "Fascia di Età:" + " " + userAge;
 
 
 
@@ -34,20 +34,40 @@ function myFunction() {
 
     prezzoBase = prezzoKm * userKm;
 
-    console.log(prezzoBase);
+    // console.log(prezzoBase);
 
     document.getElementById("prezzobase").innerHTML = "Il prezzo base da pagare sarebbe di circa:" + " " + prezzoBase.toFixed(2);
   
 
-    if (userAge <= 17) {
+    // if (userAge <= 17) {
+    //     // minorenni 20% sconto
+    //     percentualeSconto = 20;
+    // } else if (userAge >= 65) {
+    //     // over 65 sconto 40%
+    //     percentualeSconto = 40;
+    // } else {
+    //     percentualeSconto = 0;
+    // }
+
+
+    if (userAge == "minorenne") {
         // minorenni 20% sconto
         percentualeSconto = 20;
-    } else if (userAge >= 65) {
+        document.getElementById("biglietto2").classList.add("biglietto2-block");
+    } else if (userAge == "anziano") {
         // over 65 sconto 40%
         percentualeSconto = 40;
-    } else {
+        document.getElementById("biglietto2").classList.add("biglietto2-block");
+    } else if (userAge == "adulto") {
         percentualeSconto = 0;
+        document.getElementById("biglietto2").classList.add("biglietto2-block");
     }
+        else {
+        alert("NOn hai inserito l'età u fra");
+       
+    }
+
+
   
 
 // calcolare prezzo biglietto scontato
@@ -59,10 +79,17 @@ document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:"
 
 
 
+
+// document.getElementById("biglietto2").classList.add("biglietto2-block");
+
   }
  
 
 
+
+  function myReset() {
+    document.getElementById("biglietto2").classList.remove("biglietto2-block");
+  }
 
 
 
