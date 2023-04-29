@@ -88,7 +88,9 @@ document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:"
 
 
   function myReset() {
-    document.getElementById("biglietto2").classList.remove("biglietto2-block");
+    // document.getElementById("biglietto2").classList.remove("biglietto2-block");
+    history.go(0)
+
   }
 
 
