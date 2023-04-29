@@ -53,16 +53,23 @@ function myFunction() {
     if (userAge == "minorenne") {
         // minorenni 20% sconto
         percentualeSconto = 20;
+
+        // modo per aggiungere una classe che contiene display block dentro un tag che contiene classe con display none
         document.getElementById("biglietto2").classList.add("biglietto2-block");
     } else if (userAge == "anziano") {
         // over 65 sconto 40%
         percentualeSconto = 40;
+
+        // modo per aggiungere una classe che contiene display block dentro un tag che contiene classe con display none
         document.getElementById("biglietto2").classList.add("biglietto2-block");
     } else if (userAge == "adulto") {
         percentualeSconto = 0;
+
+        // modo per aggiungere una classe che contiene display block dentro un tag che contiene classe con display none
         document.getElementById("biglietto2").classList.add("biglietto2-block");
     }
         else {
+
         alert("NOn hai inserito l'età u fra");
        
     }
@@ -75,6 +82,8 @@ prezzoSconto = prezzoBase * percentualeSconto / 100;
 document.getElementById("stampaprezzosconto").innerHTML = "Lo sconto da scalare è pari a:" + " " + prezzoSconto.toFixed(2);
 prezzoFinale = prezzoBase - prezzoSconto;
 
+
+// metodo per stampare un testo all'interno di un tag html + mettere cifre decimali (2)
 document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:" + " " + prezzoFinale.toFixed(2);
 
 
@@ -89,6 +98,8 @@ document.getElementById("stampaprezzofinale").innerHTML = "Il prezzo finale è:"
 
   function myReset() {
     // document.getElementById("biglietto2").classList.remove("biglietto2-block");
+   
+// modo per aggiornare pagina e azzerare le cose
     history.go(0)
 
   }
